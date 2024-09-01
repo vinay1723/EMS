@@ -4,7 +4,7 @@ const userEventController = require("../controllers/userEventController");
 const authController = require("../controllers/authController");
 
 router.route("/events").get(userEventController.getAllEvents);
-router.use(authController.protect);
+// router.use(authController.protect);
 router
   .route("/:userid")
   .get(userEventController.getAllUsersEvents)
